@@ -3,11 +3,11 @@
 </h1>
 
 <h3 align="center">
-  Enterprise-Grade Machine Learning System for Demand Forecasting & Time Series Intelligence
+  “Sistema de Machine Learning em nível empresarial para previsão de demanda e inteligência em séries temporais.”
 </h3>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420"/>
+  <img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="120"/>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <i>Building production-level intelligence for forecasting, anomaly detection, and business insights.</i>
+  <i>“Construindo inteligência em nível de produção para previsão, detecção de anomalias e insights de negócio.”</i>
 </p>
 
 
