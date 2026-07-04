@@ -23,7 +23,7 @@
 <p align="center">
   <i>Building production-level intelligence for forecasting, anomaly detection, and business insights.</i>
 </p>
----
+
 
 ## 🧠 Visão Geral
 
