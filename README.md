@@ -1,9 +1,14 @@
 # 📊 Time Series Intelligence & Forecasting System
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge)
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Time%20Series-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Em%20Evolução-green?style=for-the-badge)
+![Project Type](https://img.shields.io/badge/Project-Data%20Science%20System-black?style=for-the-badge)
+![Stage](https://img.shields.io/badge/Stage-Forecasting%20Pipeline-purple?style=for-the-badge)
 
+</p>
 ---
 
 ## 🧠 Visão Geral
