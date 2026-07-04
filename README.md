@@ -82,11 +82,11 @@ O objetivo é transformar dados históricos em previsões confiáveis, simulando
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/placeholder/time-series-forecasting/main/assets/forecast.png" width="800"/>
+<img src="./imagens/forecast.png" width="900"/>
 
 </p>
 
-> *Gráfico ilustrativo do comportamento da previsão vs série real*
+> *Comparação entre a demanda real e a previsão gerada pelo modelo Holt-Winters, evidenciando a capacidade do modelo de capturar tendência e sazonalidade da série temporal.*
 
 ---
 
