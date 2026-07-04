@@ -1,13 +1,27 @@
-# 📊 Time Series Intelligence & Forecasting System
+<h1 align="center"> 
+  🚀 Time Series Intelligence System
+</h1>
+
+<h3 align="center">
+  Enterprise-Grade Machine Learning System for Demand Forecasting & Time Series Intelligence
+</h3>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="420"/>
+</p>
 
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Time%20Series-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Em%20Evolução-green?style=for-the-badge)
-![Project Type](https://img.shields.io/badge/Project-Data%20Science%20System-black?style=for-the-badge)
-![Stage](https://img.shields.io/badge/Stage-Forecasting%20Pipeline-purple?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/ML-Forecasting%20System-orange?style=for-the-badge)
+![Time Series](https://img.shields.io/badge/Time%20Series-Advanced-purple?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Pipeline-green?style=for-the-badge)
+![Stage](https://img.shields.io/badge/Stage-Modeling%20%26%20Evaluation-black?style=for-the-badge)
 
+</p>
+
+<p align="center">
+  <i>Building production-level intelligence for forecasting, anomaly detection, and business insights.</i>
 </p>
 ---
 
