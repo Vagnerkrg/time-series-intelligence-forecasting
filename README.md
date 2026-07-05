@@ -133,15 +133,28 @@ A aplicação está disponível em produção via Streamlit Cloud:
 
 👉 https://time-series-intelligence-forecasting.streamlit.app/
 
-### Funcionalidades:
+### ⚙️ Funcionalidades do Sistema
 
-- Upload de arquivo CSV
-- Seleção de modelo (Holt-Winters / Prophet)
+- Upload de arquivo CSV contendo série temporal
+- Seleção de modelo de forecasting (Holt-Winters / Prophet)
 - Geração automática de previsões
-- Visualização gráfica interativa
-- Cálculo de métricas (MAE e RMSE)
+- Visualização comparativa (Real vs Previsão)
+- Cálculo de métricas de performance (MAE e RMSE)
 
----
+### 📌 Requisitos de Entrada
+
+O sistema requer um dataset estruturado com as colunas:
+
+- `ds` → variável temporal (datetime)
+- `y` → variável alvo (numérica)
+
+Os dados devem estar previamente tratados e ordenados cronologicamente.
+
+### 📊 Saída do Sistema
+
+- Gráfico interativo de previsão
+- Métricas de avaliação do modelo
+- Comparação entre abordagens estatísticas
 
 ## 🧠 Conclusão
 
