@@ -81,6 +81,25 @@ O objetivo é transformar dados históricos em previsões confiáveis, simulando
 
 ---
 
+## 📊 Visualização do Modelo em Produção
+
+Abaixo está a visualização gerada diretamente pelo sistema de previsão, comparando valores reais vs previsões dos modelos:
+
+<p align="center">
+
+<img src="./imagens/forecast.png" width="900"/>
+
+</p>
+
+### 🔍 Interpretação
+
+- Linha azul: valores reais da série temporal  
+- Linha laranja: previsão do modelo  
+- O gráfico demonstra a capacidade do sistema de capturar padrões de tendência e sazonalidade  
+- Resultado gerado pelo sistema em produção (Streamlit App)
+
+---
+
 ## 📈 Comparação de Modelos
 
 | Modelo         | MAE  | RMSE |
