@@ -154,7 +154,8 @@ Os dados devem estar previamente tratados e ordenados cronologicamente.
 
 - Gráfico interativo de previsão
 - Métricas de avaliação do modelo
-- Comparação entre abordagens estatísticas
+- Comparação entre abordagens estatísticasvagner1003
+
 
 ## 🧠 Conclusão
 
@@ -168,7 +169,7 @@ Isso reforça a importância da análise exploratória e entendimento do comport
 
 Este projeto encerra sua versão atual como sistema de forecasting com modelos estatísticos (Holt-Winters e Prophet), consolidando os principais conceitos de séries temporais aplicados em um cenário de portfólio.
 
-Como evolução conceitual futura, os próximos estudos incluem aprofundamento em técnicas mais avançadas de modelagem e escalabilidade de sistemas de previsão.
+Como evolução conceitual futura, os próximos conceitos incluem aprofundamento em técnicas mais avançadas de modelagem e escalabilidade de sistemas de previsão.
 
 ## 🛠️ Tecnologias Utilizadas
 
