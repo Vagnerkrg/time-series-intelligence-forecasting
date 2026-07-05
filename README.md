@@ -24,7 +24,6 @@
   <i>“Construindo inteligência em nível de produção para previsão, detecção de anomalias e insights de negócio.”</i>
 </p>
 
-
 ## 🧠 Visão Geral
 
 Sistema completo de análise e previsão de séries temporais aplicado a um cenário de demanda real.
@@ -37,9 +36,10 @@ O objetivo é transformar dados históricos em previsões confiáveis, simulando
 
 - Analisar comportamento histórico de demanda
 - Criar baseline de previsão
-- Implementar modelos estatísticos de forecasting
-- Avaliar performance com métricas reais
-- Gerar insights para tomada de decisão
+- Implementar modelos estatísticos e de Machine Learning para forecasting
+- Avaliar performance com métricas reais (MAE e RMSE)
+- Comparar diferentes abordagens de modelagem
+- Disponibilizar um sistema interativo em produção
 
 ---
 
@@ -48,117 +48,125 @@ O objetivo é transformar dados históricos em previsões confiáveis, simulando
 ### 🔵 1. Entendimento dos Dados
 - Leitura com Pandas
 - Tratamento de valores nulos
-- Análise exploratória (histogramas e boxplots)
-- Identificação de padrões temporais
+- Conversão de datas (série temporal)
+- Ordenação cronológica dos dados
 
 ---
 
 ### 🟡 2. Engenharia de Série Temporal
-- Agregação temporal
-- Resample de dados
-- Criação de série de demanda
-- Média móvel para suavização
+- Criação da série temporal estruturada (ds / y)
+- Garantia de consistência temporal
+- Preparação para modelos estatísticos
 
 ---
 
 ### 🟠 3. Análise Exploratória
 - Visualização da série histórica
-- Tendência de crescimento
-- Comportamento da demanda ao longo do tempo
+- Identificação de tendência
+- Avaliação de comportamento temporal
+- Análise de estabilidade da série
 
 ---
 
 ### 🔴 4. Modelagem de Forecasting
 
 #### 📌 Baseline
-- Média móvel (rolling mean)
+- Média móvel como referência simples
 
-#### 📌 Modelo Estatístico
+#### 📌 Modelos Estatísticos
 - Holt-Winters (Exponential Smoothing)
-- Captura de tendência e sazonalidade
+  - Captura tendência e sazonalidade
+- Prophet (Meta AI)
+  - Modelagem robusta de tendência e sazonalidade
 
 ---
 
 ## 📈 Comparação de Modelos
 
-| Modelo        | MAE        | RMSE       |
-|--------------|------------|------------|
-| Baseline     | 108.000    | 137.000    |
-| Holt-Winters | 55.000     | 94.000     |
+| Modelo         | MAE  | RMSE |
+|----------------|------|------|
+| Holt-Winters   | 2.34 | 2.86 |
+| Prophet        | 2.53 | 3.08 |
 
 ---
 
-## 📉 Análise de Resíduos
+## 📉 Análise de Performance
 
-- Média dos resíduos próxima de zero
-- Alta variabilidade natural da série
-- Modelo sem viés significativo
-- Boa capacidade de generalização
-
----
-
-## 📊 Visão do Modelo
-
-<p align="center">
-
-<img src="./imagens/forecast.png" width="900"/>
-
-</p>
-
-> *Comparação entre a demanda real e a previsão gerada pelo modelo Holt-Winters, evidenciando a capacidade do modelo de capturar tendência e sazonalidade da série temporal.*
+- Holt-Winters apresentou melhor desempenho neste dataset
+- Prophet demonstrou maior complexidade, porém menor precisão neste cenário específico
+- A série apresenta comportamento estável e forte padrão sazonal
+- Modelos simples foram suficientes para boa generalização
 
 ---
 
 ## 💡 Insights de Negócio
 
-- A demanda possui tendência clara ao longo do tempo
-- Existe sazonalidade relevante
-- Modelos simples não capturam o comportamento real
-- Holt-Winters melhora significativamente a precisão
+- A demanda possui comportamento relativamente estável
+- Há padrão sazonal bem definido
+- Modelos estatísticos simples são altamente eficazes neste cenário
+- Complexidade adicional nem sempre melhora performance
 
 ---
 
-## 🚀 Conclusão
+## 🚀 Sistema em Produção
 
-O modelo Holt-Winters demonstrou desempenho superior ao baseline, reduzindo significativamente os erros de previsão.
+A aplicação está disponível em produção via Streamlit Cloud:
 
-Isso confirma que componentes de tendência e sazonalidade são essenciais para previsão de demanda em cenários reais.
+👉 https://time-series-intelligence-forecasting.streamlit.app/
+
+### Funcionalidades:
+
+- Upload de arquivo CSV
+- Seleção de modelo (Holt-Winters / Prophet)
+- Geração automática de previsões
+- Visualização gráfica interativa
+- Cálculo de métricas (MAE e RMSE)
 
 ---
 
-## 🧠 Próximos Passos
+## 🧠 Conclusão
 
-- Modelos ARIMA/SARIMA
-- Prophet para sazonalidade avançada
-- Pipeline automatizado de forecasting
-- Deploy de modelo para simulação de produção
+O sistema demonstrou que modelos estatísticos clássicos como Holt-Winters podem superar modelos mais complexos como Prophet dependendo da estrutura dos dados.
+
+Isso reforça a importância da análise exploratória e entendimento do comportamento da série antes da escolha do modelo.
 
 ---
 
-## 🛠️ Tecnologias
+## 🧭 Próximos Passos
+
+- Implementação de modelos ARIMA/SARIMA
+- Integração com variáveis externas (regressores)
+- Adição de modelos de Machine Learning (XGBoost)
+- Expansão do sistema para API (FastAPI)
+- Monitoramento de performance em produção
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Statsmodels
-- Jupyter Notebook
+- Prophet
+- Scikit-learn
+- Streamlit
 
 ---
 
 ## 📌 Status do Projeto
 
-✔ EDA concluído  
-✔ Engenharia de dados temporal  
-✔ Baseline implementado  
-✔ Holt-Winters validado  
-✔ Avaliação de métricas  
-✔ Insights de negócio gerados  
+✔ Pipeline de dados concluído  
+✔ Modelagem estatística implementada  
+✔ Comparação de modelos realizada  
+✔ Métricas de avaliação aplicadas  
+✔ Sistema em produção (Streamlit Cloud)  
 
-🚧 Em evolução → Prophet e modelos avançados
+✔ Versão 1 concluída com deploy funcional em produção
 
 ---
 
-## 🧭 Nota
+## 🧠 Nota
 
-Este projeto faz parte de um portfólio de Data Science focado em problemas reais de previsão de demanda e simulação de cenários de negócio.
+Este projeto faz parte de um portfólio de Data Science com foco em problemas reais de previsão de demanda, engenharia de machine learning e sistemas em produção.
