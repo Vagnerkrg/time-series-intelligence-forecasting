@@ -166,13 +166,9 @@ Isso reforça a importância da análise exploratória e entendimento do comport
 
 ## 🧭 Próximos Passos
 
-- Implementação de modelos ARIMA/SARIMA
-- Integração com variáveis externas (regressores)
-- Adição de modelos de Machine Learning (XGBoost)
-- Expansão do sistema para API (FastAPI)
-- Monitoramento de performance em produção
+Este projeto encerra sua versão atual como sistema de forecasting com modelos estatísticos (Holt-Winters e Prophet), consolidando os principais conceitos de séries temporais aplicados em um cenário de portfólio.
 
----
+Como evolução conceitual futura, os próximos estudos incluem aprofundamento em técnicas mais avançadas de modelagem e escalabilidade de sistemas de previsão.
 
 ## 🛠️ Tecnologias Utilizadas
 
